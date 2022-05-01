@@ -85,6 +85,9 @@ class Dates:
         #write_file("output.csv", resultDates)          
               
         return resultDates
+
+    def da(self):
+        return self.__dateParser()
         
 
     def futureDates(self):
@@ -92,3 +95,5 @@ class Dates:
         df = pd.DataFrame(values)
         df.columns=['ds']
         return df
+
+        
